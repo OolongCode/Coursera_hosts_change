@@ -17,17 +17,19 @@ post_data = {'host':'d3c33hcgiwev3.cloudfront.net','go':'Go'}
 php_raw = requests.post(url, data=post_data)
 soup = BeautifulSoup(php_raw.content,'lxml')
 
-sc_1 = soup.select('head script')[6].string[-30:-17]
-sc_2 = soup.select('head script')[7].string[-30:-17]
-sc_3 = soup.select('head script')[8].string[-30:-17]
-sc_4 = soup.select('head script')[9].string[-30:-17]
+re_pattern = re.compile(r'[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*')
+
+sc_1 = soup.select('head script')[6].string
+sc_2 = soup.select('head script')[7].string
+sc_3 = soup.select('head script')[8].string
+sc_4 = soup.select('head script')[9].string
 
 sc_data = [sc_1,sc_2,sc_3,sc_4]
 file_data = ""
 for text in sc_data:
-    if '>' in text:
-        text = text[1:]
+    text = re_pattern.search(text).group()
     file_data += text +' d3c33hcgiwev3.cloudfront.net'+ '\n'
+
 file_raw_data = ''
 # with open("coursera_host.txt",'r+') as f:
 #     for line in f.readlines():
