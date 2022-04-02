@@ -41,6 +41,8 @@ if is_admin():
             if 'd3c33hcgiwev3.cloudfront.net' not in line:
                 file_raw_data += line
         file_raw_data += file_data
+    with open("C:\\Windows\\System32\\drivers\\etc\\hosts",'w', encoding='utf-8') as admin_file:
+        admin_file.write("\n")
         admin_file.writelines(file_raw_data)
 
 elif sys.version_info[0] == 3:
