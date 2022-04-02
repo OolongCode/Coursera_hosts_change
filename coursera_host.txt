@@ -1,0 +1,8 @@
+d3c33hcgiwev3.cloudfront.net  54.192.97.79
+d3c33hcgiwev3.cloudfront.net  54.192.97.139
+d3c33hcgiwev3.cloudfront.net  54.192.97.33
+d3c33hcgiwev3.cloudfront.net  54.192.97.74
+54.192.97.74 d3c33hcgiwev3.cloudfront.net
+54.192.97.139 d3c33hcgiwev3.cloudfront.net
+54.192.97.33 d3c33hcgiwev3.cloudfront.net
+54.192.97.79 d3c33hcgiwev3.cloudfront.net
