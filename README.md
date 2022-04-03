@@ -1,4 +1,4 @@
-# Coursera Change Hosts Progra
+# Coursera Change Hosts Program
 
 Coursera is a good platform to learn all sorts of knowledge from many international universities. There is a question that many students who is from China and use the Chinese networks can't watch the learning videos of the Coursera platform. Therefore, I try searching some methods to watch them in Chinese networks.
 
